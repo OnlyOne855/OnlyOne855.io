@@ -1,0 +1,248 @@
+.loading {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin: 150px auto;
+    background-color: #eeeeee;
+    animation: spin 2s linear infinite;
+    animation-direction: reverse;
+}
+.shape {
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 40px;
+    background-color: #fff;
+    mix-blend-mode: exclusion;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+.shape.shape-1 {
+    animation: spin1 2s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+.shape.shape-2 {
+    animation: spin2 2s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+.shape.shape-3 {
+    animation: spin3 2s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+.shape.shape-4 {
+    animation: spin4 2s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+.shape.shape-1 {
+    top: 20px;
+    left: 40px;
+}
+.shape.shape-2 {
+    right: 20px;
+    top: 40px;
+    width: 20px;
+    height: 40px;
+}
+.shape.shape-3 {
+    bottom: 20px;
+    left: 40px;
+}
+.shape.shape-4 {
+    left: 20px;
+    top: 40px;
+    width: 20px;
+    height: 40px;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(90deg);
+    }
+}
+@keyframes spin1 {
+    25%{
+        transform: rotate(90deg) translate(30px, -10px) scaleX(1);
+    }
+    100% {
+        transform: rotate(90deg) translate(30px, -10px) scaleX(2);
+    }
+}
+@keyframes spin2 {
+    15% {
+        transform: rotate(0deg) translate(0px) scaleY(1);
+    }
+    50% {
+        transform: rotate(90deg) translate(10px, 30px) scaleY(1);
+    }
+    100% {
+        transform: rotate(90deg) translate(10px, 30px) scaleY(2);
+    }
+}
+@keyframes spin3 {
+    40% {
+        transform: rotate(0deg) translate(0px) scaleX(1);
+    }
+    75% {
+        transform: rotate(90deg) translate(-30px, 10px) scaleX(1);
+    }
+    100% {
+        transform: rotate(90deg) translate(-30px, 10px) scaleX(2);
+    }
+}
+@keyframes spin4 {
+    65% {
+        transform: rotate(0deg) translate(0px) scaleY(1);
+    }
+    100% {
+        transform: rotate(90deg) translate(-10px, -30px) scaleY(2);
+    }
+}
+*,
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:burlywood
+}
+
+.container-navbar {
+    background-color: burlywood;
+    width: 1300px;
+    height: 100px;
+}
+
+li {
+    color: black;
+}
+
+.ul-navbar {
+    background-color:red;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    border: 2px solid red;
+    list-style-type:none ;
+    padding: 5px ;
+    margin: 5px;
+}
+
+.li-navbar:hover {
+    background-color: aqua;
+    transition: .5s ease-in-out;
+    transition-delay: .3s;
+    border-radius: 10px;
+}
+
+
+.container-footer {
+    background-color: white
+}
+
+.h1-container {
+    font-size: 40px;
+}
+
+.li-footer {
+    color: black;
+    font-size: 40px;
+    list-style-type: none;
+}
+
+.a-navbar {
+    color: black;
+    text-decoration: none;
+}
+
+
+.h1-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 26px;
+    font-style:oblique;
+    background-color: white;
+}
+.{
+margin: 0;
+padding: 0; 
+font-family: sans-serif;
+}
+
+.back {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    list-style-type:none ;
+    padding: 5px ;
+    margin: 5px;
+}
+
+.back:hover {
+    background-color: aqua;
+    transition: .5s ease-in-out;
+    transition-delay: .3s;
+    border-radius: 10px;
+}
+
+.ul-back {
+    background-color:red;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul-next {
+    background-color:red;
+    display:flex;
+    height: 90pt;
+    justify-content: center;
+    align-items:center;
+}
+
+@media only screen and (min-width: 480px) {
+    nav a {
+      float: left;
+      width: 30%;
+      margin: 0 0 0 5%;
+      padding: 25px 1%;
+      margin-bottom: 0;
+    }
+    nav li:first-child a {
+      margin-left: 0;
+    }
+    nav li:last-child a {
+      margin-right: 0;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .title {
+      float: left;
+      font-size: 1.4em;
+    }
+    nav {
+      float: right;
+      width: 60%;
+    }
+    nav a {
+      padding: 15px 1%;
+    }
+    .main article {
+      float: left;
+      width: 57%;
+    }
+    .main aside {
+      float: right;
+      width: 38%;
+    }
+  }
